@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Medium Article Redirect",
+    "version": "1.0",
+    "description": "Redirects specific Medium articles to freedium.cfd with the full Medium URL appended.",
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "*://medium.com/*"
+    ],
+    "action": {
+        "default_title": "Medium Redirect Active"
+    }
+}
